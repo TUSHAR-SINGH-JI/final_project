@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Landing Page</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Custom styles for the landing page */
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Example font, adjust as needed */
+}
+
+/* Color Palette */
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+.text-green-primary {
+    color: #4CAF50; /* Example green, adjust to match image */
+}
+
+/* Buttons */
+.btn-green-primary {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+.btn-green-primary:hover {
+    background-color: #45a049;
+}
+
+/* Layout and Spacing */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Footer Specific Styles */
+.footer-bg {
+    background-color: #2c3e50; /* Dark blue/gray for footer */
+    color: white;
+}
+</style>
+<body>
+
+
+    <!-- Navigation Section -->
+    <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a class="navbar-brand text-2xl font-bold text-green-primary" href="#">
+                <i class="fas fa-leaf"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto flex space-x-6">
+                    <li class="nav-item"><a class="nav-link text-gray-700 hover:text-green-primary" href="#" aria-label="Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-700 hover:text-green-primary" href="#" aria-label="Service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-700 hover:text-green-primary" href="#" aria-label="Feature">Feature</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-700 hover:text-green-primary" href="#" aria-label="Product">Product</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-700 hover:text-green-primary" href="#" aria-label="Testimonial">Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-700 hover:text-green-primary" href="#" aria-label="FAQ">FAQ</a></li>
+                </ul>
+                <div class="ml-auto flex items-center space-x-4">
+                    <a class="text-gray-700 hover:text-green-primary" href="#" aria-label="Login">Login</a>
+                    <button class="btn btn-green-primary px-4 py-2 rounded-md" aria-label="Sign up">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light-gray py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+            <div class="text-content md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl font-bold text-gray-800 leading-tight mb-4">
+                    Lessons and insights <br><span class="text-green-primary">from 8 years</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">Where to grow your business as a photographer: site or social media?</p>
+                <button class="btn btn-green-primary px-6 py-3 rounded-md text-lg">Register</button>
+            </div>
+            <div class="image-content md:w-1/2 flex justify-center">
+                <i class="fas fa-laptop-code text-green-primary text-9xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients-section py-16">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-3">Our Clients</h2>
+            <p class="text-gray-600 mb-10">We have been working with some Fortune 500+ clients</p>
+            <div class="flex flex-wrap justify-center items-center space-x-8 md:space-x-16">
+                <i class="fab fa-apple text-5xl text-gray-500"></i>
+                <i class="fab fa-google text-5xl text-gray-500"></i>
+                <i class="fab fa-microsoft text-5xl text-gray-500"></i>
+                <i class="fab fa-amazon text-5xl text-gray-500"></i>
+                <i class="fab fa-facebook text-5xl text-gray-500"></i>
+                <i class="fab fa-twitter text-5xl text-gray-500"></i>
+                <i class="fab fa-linkedin text-5xl text-gray-500"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Management Section -->
+    <section class="community-section bg-light-gray section-padding">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-3">Manage your entire community <br>in a single system</h2>
+            <p class="text-gray-600 mb-12">Who is Nextcent suitable for?</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 shadow-md rounded-lg bg-white">
+                    <div class="icon mb-4 text-green-primary text-5xl"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Membership Organisations</h3>
+                    <p class="text-gray-600">Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+                <div class="card p-6 shadow-md rounded-lg bg-white">
+                    <div class="icon mb-4 text-green-primary text-5xl"><i class="fas fa-building"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">National Associations</h3>
+                    <p class="text-gray-600">Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+                <div class="card p-6 shadow-md rounded-lg bg-white">
+                    <div class="icon mb-4 text-green-primary text-5xl"><i class="fas fa-handshake"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Clubs And Groups</h3>
+                    <p class="text-gray-600">Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unseen Spending Section -->
+    <section class="unseen-spending-section py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+            <div class="image-content md:w-1/2 flex justify-center mb-10 md:mb-0">
+                <i class="fas fa-chart-bar text-green-primary text-9xl"></i>
+            </div>
+            <div class="text-content md:w-1/2 md:pl-16">
+                <h2 class="text-4xl font-bold text-gray-800 leading-tight mb-4">
+                    The unseen of spending three <br>years at Pixelgrade
+                </h2>
+                <p class="text-gray-600 mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan ipsum vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed iaculis. Nunc a lacus in odio facilisis facilisis. Proin at ipsum at ipsum scelerisque. Etiam quis massa maximus, gravida metus sit amet, ullamcorper nisi. Donec elementum pulvinar odio.
+                </p>
+                <button class="btn btn-green-primary px-6 py-3 rounded-md text-lg">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Business Helping Section -->
+    <section class="local-business-section bg-light-gray section-padding">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+            <div class="text-content md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl font-bold text-gray-800 leading-tight mb-4">
+                    Helping a local <br><span class="text-green-primary">business reinvent itself</span>
+                </h2>
+                <p class="text-gray-600">We reached here with our hard work and dedication</p>
+            </div>
+            <div class="stats-content md:w-1/2 grid grid-cols-2 gap-8">
+                <div class="stat-item flex items-center">
+                    <i class="fas fa-users text-green-primary text-4xl mr-4"></i>
+                    <div>
+                        <p class="text-3xl font-bold text-gray-800">2,245,341</p>
+                        <p class="text-gray-600">Members</p>
+                    </div>
+                </div>
+                <div class="stat-item flex items-center">
+                    <i class="fas fa-bicycle text-green-primary text-4xl mr-4"></i>
+                    <div>
+                        <p class="text-3xl font-bold text-gray-800">46,328</p>
+                        <p class="text-gray-600">Clubs</p>
+                    </div>
+                </div>
+                <div class="stat-item flex items-center">
+                    <i class="fas fa-ticket-alt text-green-primary text-4xl mr-4"></i>
+                    <div>
+                        <p class="text-3xl font-bold text-gray-800">828,867</p>
+                        <p class="text-gray-600">Event Bookings</p>
+                    </div>
+                </div>
+                <div class="stat-item flex items-center">
+                    <i class="fas fa-credit-card text-green-primary text-4xl mr-4"></i>
+                    <div>
+                        <p class="text-3xl font-bold text-gray-800">1,926,436</p>
+                        <p class="text-gray-600">Payments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Design Section -->
+    <section class="footer-design-section py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+            <div class="image-content md:w-1/2 flex justify-center mb-10 md:mb-0">
+                <i class="fas fa-lock text-green-primary text-9xl"></i>
+            </div>
+            <div class="text-content md:w-1/2 md:pl-16">
+                <h2 class="text-4xl font-bold text-gray-800 leading-tight mb-4">
+                    How to design your site footer like <br>we did
+                </h2>
+                <p class="text-gray-600 mb-8">
+                    Donec a eros vel nisl. Fusce egestas tristique ultrices. Nam tempor augue nec tincidunt molestie, magna nunc varius arcu, at scelerisque elit erat et magna. Donec quis erat at ipsum scelerisque. In hac habitasse platea dictumst. Curabitur vel neque. Etiam quis massa maximus, gravida metus sit amet, ullamcorper nisi. Donec elementum pulvinar odio.
+                </p>
+                <button class="btn btn-green-primary px-6 py-3 rounded-md text-lg">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section bg-light-gray section-padding">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+            <div class="image-content md:w-1/3 flex justify-center mb-10 md:mb-0">
+                <i class="fas fa-user-circle text-green-primary text-9xl"></i>
+            </div>
+            <div class="text-content md:w-2/3 md:pl-16">
+                <p class="text-gray-700 text-lg mb-6">
+                    Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultricies, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus sit amet non magna.
+                </p>
+                <p class="text-green-primary font-semibold text-xl">Tim Smith</p>
+                <p class="text-gray-600 mb-6">British Dragon Boat Racing Association</p>
+                <div class="flex flex-wrap items-center space-x-6">
+                    <i class="fab fa-apple text-3xl text-gray-500"></i>
+                    <i class="fab fa-google text-3xl text-gray-500"></i>
+                    <i class="fab fa-microsoft text-3xl text-gray-500"></i>
+                    <i class="fab fa-amazon text-3xl text-gray-500"></i>
+                    <i class="fab fa-facebook text-3xl text-gray-500"></i>
+                    <i class="fab fa-twitter text-3xl text-gray-500"></i>
+                    <i class="fab fa-linkedin text-3xl text-gray-500"></i>
+                    <a href="#" class="text-green-primary font-semibold flex items-center">Meet all customers <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Section -->
+    <section class="marketing-section py-20">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-3">Caring is the new marketing</h2>
+            <p class="text-gray-600 mb-12">
+                The Nextcent blog is the best place to read about the latest membership insights, <br>
+                trends and more. See how you can help your association grow your member community <br>
+                and increasing their membership income and lot's more.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 shadow-md rounded-lg bg-white">
+                    <div class="icon mb-4 text-green-primary text-5xl"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Creating Streamlined Safeguarding Processes with OneRen</h3>
+                    <p class="text-gray-600">Readmore <i class="fas fa-arrow-right ml-2"></i></p>
+                </div>
+                <div class="card p-6 shadow-md rounded-lg bg-white">
+                    <div class="icon mb-4 text-green-primary text-5xl"><i class="fas fa-question-circle"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">What are your safeguarding responsibilities and how can you manage them?</h3>
+                    <p class="text-gray-600">Readmore <i class="fas fa-arrow-right ml-2"></i></p>
+                </div>
+                <div class="card p-6 shadow-md rounded-lg bg-white">
+                    <div class="icon mb-4 text-green-primary text-5xl"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Revamping the Membership Model with Triathlon Australia</h3>
+                    <p class="text-gray-600">Readmore <i class="fas fa-arrow-right ml-2"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section bg-light-gray section-padding text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Pellentesque suscipit <br>fringilla libero eu.</h2>
+            <button class="btn btn-green-primary px-6 py-3 rounded-md text-lg">Get a Demo <i class="fas fa-arrow-right ml-2"></i></button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-bg py-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
+            <div class="col-span-1">
+                <a class="navbar-brand text-2xl font-bold text-green-primary mb-4 block" href="#">
+                    <i class="fas fa-leaf"></i>
+                </a>
+                <p class="text-gray-400 mb-4">Copyright © 2020 Nextcent Ltd. <br>All rights reserved</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-dribbble text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <h4 class="text-white text-lg font-semibold mb-4">Company</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">About us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contact us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h4 class="text-white text-lg font-semibold mb-4">Support</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Help center</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Terms of service</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Legal</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Privacy policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Status</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h4 class="text-white text-lg font-semibold mb-4">Stay up to date</h4>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control p-3 rounded-md border-0 focus:ring-0" placeholder="Your email address" aria-label="Your email address">
+                    <button class="btn btn-green-primary rounded-md ml-2"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+
+    <!-- Bootstrap JS and Popper.js CDN (for Navbar toggler, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
